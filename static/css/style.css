@@ -1,0 +1,13 @@
+body {
+    background-color: blue; 
+} 
+
+.demo {
+    background-color: red;
+    padding: 10px;
+    border-width: 20px;
+    border-radius: 20px;
+}
+
+
+

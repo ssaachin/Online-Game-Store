@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-tofit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Advanced Development">
     <meta name="author" content="Xin Lu">
     <!--<link rel="icon" href="TODO">-->
@@ -13,15 +13,14 @@
     <!-- Open Graph
     TODO -->
 
-    <title>Advanced Development Unit</title>
+    <title>Sachin OGS</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.
-3/css/bootstrap.min.css" integrity="sha384-
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-
 MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="ano
-nymous">
+nymous"> -->
     <!-- Custom styles -->
-    <link href="static/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
  </head>
 
  <!-
@@ -34,25 +33,19 @@ here! -->
 
  <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav >
         <!-- Navbar branding. -->
-        <a class="navbar-brand" href="#">WS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" datatarget="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" ariaexpanded="false" aria-label="Toggle navigation">
+        <!-- <a class="navbar-brand" href="#">WS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <div class="demo" >
             <ul class="navbar-nav mr-auto">
-                {% for href, id, caption in navigation_bar %} 
-                    {% if id == active_page %} 
-                        <li class="nav-item active">
-                            <a class="navlink" href="{{ href|e }}">{{ caption|e }} <span class="sronly">(current)</span></a>
-                        </li>
-                    {% else %} 
+                {% for href, id, caption in navigation_bar %}                                          
                         <li class="nav-item">
                             <a class="nav-link" href="{{ href|e }}">{{ caption|e }}</a>
-                        </li>
-                    {% endif %} 
+                        </li>                   
                 {% endfor %} 
             </ul>
         </div>
@@ -69,16 +62,14 @@ here! -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery3.3.1.slim.min.js" integrity="sha384-
-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="ano
+
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="ano
 nymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/poppe
-r.min.js" integrity="sha384-
-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="ano
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="ano
 nymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.m
-in.js" integrity="sha384-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-
 ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="ano
-nymous"></script>
+nymous"></script> -->
  </body>
 </html>

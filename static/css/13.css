@@ -1,5 +1,7 @@
 body {
     background-color: #2c3531; 
+    color: #D1E8E2;
+    letter-spacing: -1px;
 } 
 
 .navbar {
@@ -16,6 +18,7 @@ body {
   border-bottom: 5px solid #d9b08c;
   line-height: 10px;
   display: inline-block;
+  margin: 5px;
 }
 
 .navbar .navbar-brand {

@@ -10,7 +10,7 @@ def home():
     return render_template('home.html') 
 
 
-@app.route('/about') 
+@app.route('/games') 
 def about(): 
     return render_template('about.html')
 

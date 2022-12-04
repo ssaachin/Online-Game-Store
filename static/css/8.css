@@ -1,0 +1,23 @@
+body {
+    background-color: #2c3531; 
+} 
+
+.navbar {
+    background-color: #116466;
+}
+
+.navbar .nav-link {
+    color: #D1E8E2;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: white;
+  border-bottom: 5px solid #d9b08c;
+  line-height: 10px;
+  display: inline-block;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}

@@ -3,8 +3,8 @@
  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Advanced Development">
-    <meta name="author" content="Xin Lu">
+    <meta name="description" content="AD Assignment">
+    <meta name="author" content="Sachin">
     <!--<link rel="icon" href="TODO">-->
 
     <!-- Favicons (http://realfavicongenerator.net)
@@ -16,11 +16,11 @@
     <title>Sachin OGS</title>
 
     <!-- Bootstrap core CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-
 MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="ano
-nymous"> -->
+nymous">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/8.css">
  </head>
 
  <!-
@@ -31,26 +31,28 @@ here! -->
 
  {% set active_page = active_page|default('home') -%}
 
- <body>
+ 
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top py-3" >
+        <!--  navbar-dark bg-dark fixed-top -->
 
-    <nav >
-        <!-- Navbar branding. -->
-        <!-- <a class="navbar-brand" href="#">WS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
+        <div class="container">
+            <!-- Navbar branding. -->
+            <a href="#" class="navbar-brand text-uppercase font-weight-bold">OGS</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
 
-        <div class="demo" >
-            <ul class="navbar-nav mr-auto">
-                {% for href, id, caption in navigation_bar %}                                          
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ href|e }}">{{ caption|e }}</a>
-                        </li>                   
-                {% endfor %} 
-            </ul>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse" >
+                <ul class="navbar-nav ml-auto">
+                    {% for href, id, caption in navigation_bar %}                                          
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase font-weight-bold" href="{{ href|e }}">{{ caption|e }}</a>
+                            </li>                   
+                    {% endfor %} 
+                </ul>
+            </div>
         </div>
     </nav>
-
+</header>
     <main role="main" class="container">
 
         <!-- Content -->
@@ -64,12 +66,12 @@ here! -->
     <!-- Placed at the end of the document so the pages load faster -->
 
     
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="ano
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="ano
 nymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="ano
 nymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-
 ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="ano
-nymous"></script> -->
- </body>
+nymous"></script>
+ 
 </html>

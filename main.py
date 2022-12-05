@@ -1,13 +1,46 @@
 import logging 
+import pymongo
+import json
+
+
 from flask import Flask, render_template,request 
+from pymongo import MongoClient
+from bson.json_util import dumps 
 
 app = Flask(__name__)
+
+cluster=MongoClient( "mongodb+srv://sachin2517:2517.Ylo@cluster0.mvn0mxf.mongodb.net/?retryWrites=true&w=majority") 
+db=cluster["test"] 
+collection=db["test"] 
+
+
+def get_mongodb_items(): 
+    # Search data from Mongodb
+
+    myCursor = None
+    # create queries
+    # title_query = {"Unit title": {"$eq": "IoT Unit"}} 
+    # author_query = {"Unit leader": {"$eq": "Xin"}} 
+    # dateCreated_query = {"dateCreated": {"$eq": 2021}}
+    # demo_thing = {"thumbnail": {"$eq": "some url"}}  
+
+    myCursor = collection.find() 
+    # {"$and": [demo_thing]}
+    list_cur = list(myCursor) 
+    print(list_cur) 
+    json_data = dumps(list_cur) 
+    return json_data 
+
+
 
 
 @app.route('/') 
 @app.route('/home') 
 def home(): 
-    return render_template('home.html') 
+    jResponse=get_mongodb_items() 
+
+    data=json.loads(jResponse) 
+    return render_template('home.html', data=data) 
 
 
 @app.route('/games') 

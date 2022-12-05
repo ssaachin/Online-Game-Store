@@ -5,11 +5,17 @@
     <header class="py-5 mt-5">
     <h1> Home </h1>
     </header>
-    <div class="py-5">
-    <p class="lead">unit is to give students a critical understandi
-ng of the design of applications which support enterprise activities. There will b
-e an emphasis on software ons.</p>
-</div>
+    {% for d in data %} 
+                <div class="row">
+                    <div style="display:flex; justify-content: center; align-items: center;" class="col align-self-center">
+                        <h2>{{ d['title'] }}</h2>
+                        <h3>{{ d['author'] }}</h3>
+                        <p>{{ d['dateCreated'] }}</p> 
+                        <p>{{ d['content'] }}</p>
+    
+                    </div>
+                </div>
+            {% endfor %} 
 </div>
 </div>
 <!-- 

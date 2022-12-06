@@ -1,11 +1,23 @@
 body {
     background-color: #2c3531; 
     color: #D1E8E2;
-    letter-spacing: -1px;
+    
 } 
+
+img {
+    height: 40rem;
+
+
+}
+
 
 .navbar {
     background-color: #116466;
+    width: 80%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2rem;
+    
 }
 
 .navbar .nav-link {
@@ -15,12 +27,168 @@ body {
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
     color: white;
-  border-bottom: 5px solid #d9b08c;
+  border-bottom: 5px solid purple;
   line-height: 10px;
   display: inline-block;
   margin: 5px;
+  letter-spacing: -1px;
 }
 
 .navbar .navbar-brand {
     color: #fff;
+    letter-spacing: -1px;
 }
+
+
+.background {
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.content {
+    width: 25%;
+    position: absolute;
+    top: 0;
+    margin: 170px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-width: 0.5rem;
+    border-color: blue;
+    border-style: solid; */
+    transition: transform .5s;
+    
+}
+
+.content:hover {
+    transform: scale(1.2);
+}
+
+.btn {
+    border-radius: 10px;
+    width: 20rem;
+}
+
+h1 {
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+        font-family: 'Nabla', cursive;
+        
+}
+
+p {
+    font-family: 'Sigmar One', cursive;
+    font-style: italic;
+    letter-spacing: 1;    
+}
+
+.service-bg {
+    background-color: #116466;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 300px;
+    margin-bottom: 50rem;
+}
+
+.platform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sigmar One', cursive;
+    color: #ffcb9a;
+    letter-spacing: -1;
+}
+.service {
+    display: flex;
+ 
+}
+
+.icon {
+    margin: 10px;
+}
+
+.pictures {
+    border-radius: 10px;
+    padding: 10px;
+    flex: 50%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: purple; 
+  }
+
+/* .title {
+      color: white;
+     
+}
+
+.p {
+        text-align: center;
+        padding: 0 30vw;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+}    
+    
+.search {
+      display: flex;
+      background-color: #ffffffce;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+}
+        
+      }
+      input {
+          background-color: transparent;
+          border: none;
+          text-align: center;
+          color: black; 
+        }
+      
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 1.5rem;
+      }
+        label {
+          font-size: 1.1rem;
+          color: #03045e;
+        }
+      button {
+        padding: 1rem;
+        cursor: pointer;
+        border-radius: 0.3rem;
+        border: none;
+        color: white;
+        background-color: #4361ee;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        transition: 0.3s ease-in-out;
+      } */
+    
+  

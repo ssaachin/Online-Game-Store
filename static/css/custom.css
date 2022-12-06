@@ -1,10 +1,10 @@
 /**
  * Padding for the body (to accomodate the fixed nav-bar).
  */
-body { 
+/* body { 
     padding-top: 5rem;
     background:teal 
-} 
+}  */
 
 /**
     * Responsive Text (apparently I'm on my own here)

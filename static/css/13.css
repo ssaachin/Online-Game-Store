@@ -1,12 +1,12 @@
 body {
-    background-color: #2c3531; 
+    background-color: black; 
     color: #D1E8E2;
     
 } 
 
-img {
-    height: 40rem;
-
+.arcade {
+    height: 38rem;
+    
 
 }
 
@@ -73,7 +73,7 @@ img {
     width: 20rem;
 }
 
-h1 {
+.OGS {
         font-size: 3rem;
         letter-spacing: 0.2rem;
         font-family: 'Nabla', cursive;
@@ -86,41 +86,20 @@ p {
     letter-spacing: 1;    
 }
 
-.service-bg {
-    background-color: #116466;
-    width: 70%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 300px;
-    margin-bottom: 50rem;
-}
-
-.platform {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Sigmar One', cursive;
-    color: #ffcb9a;
-    letter-spacing: -1;
-}
-.service {
-    display: flex;
  
-}
-
 .icon {
-    margin: 10px;
+    background-color: #116466;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .pictures {
-    border-radius: 10px;
-    padding: 10px;
-    flex: 50%;
+    margin-left: 50px;
+    margin-right: 50px;
 }
+
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -141,54 +120,133 @@ p {
     background: purple; 
   }
 
-/* .title {
-      color: white;
-     
-}
 
-.p {
-        text-align: center;
-        padding: 0 30vw;
-        margin-top: 0.5rem;
-        font-size: 1.2rem;
-}    
-    
-.search {
-      display: flex;
-      background-color: #ffffffce;
-      padding: 0.5rem;
-      border-radius: 0.5rem;
-}
-        
-      }
-      input {
-          background-color: transparent;
-          border: none;
-          text-align: center;
-          color: black; 
-        }
-      
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 0 1.5rem;
-      }
-        label {
-          font-size: 1.1rem;
-          color: #03045e;
-        }
-      button {
-        padding: 1rem;
-        cursor: pointer;
-        border-radius: 0.3rem;
-        border: none;
-        color: white;
-        background-color: #4361ee;
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        transition: 0.3s ease-in-out;
-      } */
-    
+
+
   
+
+  .media-container {
+    position: relative;
+    
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+   
+  }
+  .media-scroller,
+  .media-group {
+    display: grid;
+    grid-auto-flow: column;
+    border-color: black;
+    border-width: 1rem;
+    border-style: solid;
+  }
+  .media-scroller {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    grid-auto-columns: 100%;
+    padding: 0;
+    scroll-padding-inline: 10rem;
+  }
+  /* .media-group {
+    grid-auto-columns: 1fr;
+  } */
+  .media-element {
+       
+        overflow: hidden; 
+        transition: transform .2s;
+        margin: 5px;
+  }
+  .media-element:hover {
+    transform: scale(1.1); 
+    overflow: hidden;
+    
+  }
+
+
+  
+
+
+
+
+  .media-element > img {
+    width: 100%;
+    aspect-ratio: 5 / 5;
+     
+     
+  }
+  .next,
+  .previous {
+    display: none;
+     align-items: center;
+     z-index: 10; 
+    position: absolute;
+    width: 3rem;
+    padding: 1rem;
+    background: rgb(0 0 0 / 0); 
+     opacity: 1;
+  }
+  .previous {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    
+  }
+  .next {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+  }
+  .media-group:first-child :where(.next, .previous) {
+    display: flex;
+  }
+  .media-scroller:hover :where(.next, .previous) {
+    opacity: 1;
+  }
+  :where(.next, .previous):hover {
+    background: rgb(0 0 0 / .3);
+  }
+   :where(.next, .previous) > svg {
+    transition: transform 75ms linear;
+    transform: scale(1);
+  } 
+   :where(.next, .previous):hover > svg {
+    transform: scale(1.2);
+  } 
+  .media-group:target :where(.next, .previous) {
+    display: flex;
+  }
+  .media-scroller:has(:target:not(:first-child))
+    .media-group:first-of-type
+    .next {
+    display: none;
+  }
+  
+  
+  
+  /* .navigation-indicators {
+    margin: auto;
+  }
+  .navigation-indicators > * {
+    width: 1rem;
+    height: 2px;
+    background: white;
+    opacity: 0.5;
+  } */
+  .media-scroller:has(.media-group:target)
+    .navigation-indicators
+    > *:nth-child(1) {
+    opacity: 0.5;
+  }
+  .navigation-indicators > *:nth-child(1),
+  .media-group:nth-child(1):target ~ .navigation-indicators > *:nth-child(1) {
+    opacity: 1;
+  }
+  .media-group:nth-child(2):target ~ .navigation-indicators > *:nth-child(2) {
+    opacity: 1;
+  }
+  .media-scroller:hover .navigation-indicators {
+    opacity: 1;
+  }

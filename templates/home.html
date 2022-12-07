@@ -1,6 +1,7 @@
 {% extends "base.html" %} 
 {% block content %} 
     <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Sigmar+One&display=swap" rel="stylesheet">
@@ -10,11 +11,11 @@
 
 
     <div class="background">
-      <img src="../static/arcade.gif" alt="arcade" width= 100% />
+      <img class="arcade" src="../static/arcade.gif" alt="arcade" width= 100% />
     </div>
     <div class="content">
       <div class="title">
-        <h1>Welcome to OGS</h1>
+        <h1 class="OGS">Welcome to OGS</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
           natus, enim ipsam magnam odit deserunt itaque? Minima earum velit
@@ -24,52 +25,163 @@
         </div>
     
     </div>
-    <div class="service-bg" >
-        <h1 class="platform" > Gaming Platforms</h1>
-            <div class="service">
-                
-              <div class="icon">
-                <img class="pictures" src="../static/xbox.png" width=50%  alt="" />
-              </div>
-              <div class="icon">
-                <img class="pictures" src="../static/ps4.png" width=50%  alt="" />
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-                    natus, enim ipsam magnam odit deserunt itaque? Minima earum velit
-                    tenetur!
-                  </p>
-              </div>
-              <div class="icon">
-                <img class="pictures" src="../static/nintendo.png" width=50%  alt="" />
-              </div>
+    <div class="icon">
+                <img class="pictures" src="../static/clearps4.png"   alt="" />
+                <img class="pictures" src="../static/ninclear.png"   alt="" />
+                <img class="pictures" src="../static/xbox clear.png"   alt="" />
+                <img class="pictures" src="../static/steamclear.png"   alt="" />       
+    </div>
+
+
+    <div class="icon">
+            
+</div>
+
+<div class="media-container">
+    <div class="media-scroller">
+      <!--   Group 1 -->
+      <div class="media-group" id="group-1">
+        <div class="media-element">
+            <img src="../static/fifa22.png" alt="" />
+          </div>
+          <div class="media-element">
+            <img src="../static/fortnite.png" alt="" />
+          </div>
+          <div class="media-element">
+            <img src="../static/godofwar.png" alt=""/>
+            
+          </div>
+          <div class="media-element">
+              <img  src="../static/GTA5.png" alt="" />
+              
             </div>
-</div>
+            <div class="media-element">
+              <img src="../static/re4.png" alt="" />
+            </div>
+            <div class="media-element">
+                <img src="../static/re4.png" alt="" />
+              </div>
+      
+        <a class="next" href="#group-2" aria-label="next">
+          <svg>
+            <use href="#next"></use>
+          </svg>
+        </a>
+      </div>
+      <!-- Group 2   -->
+      <div class="media-group" id="group-2">
+        <a class="previous" href="#group-1">
+          <svg>
+            <use href="#previous"></use>
+          </svg>
+        </a>
+        <div class="media-element">
+          <img src="../static/fifa22.png" alt="" />
+        </div>
+        <div class="media-element">
+          <img src="../static/fortnite.png" alt="" />
+        </div>
+        <div class="media-element">
+          <img src="../static/godofwar.png" alt=""/>
+          
+        </div>
+        <div class="media-element">
+            <img  src="../static/GTA5.png" alt="" />
+            
+          </div>
+          <div class="media-element">
+            <img src="../static/re4.png" alt="" />
+          </div>
+          <div class="media-element">
+            <img src="../static/re4.png" alt="" />
+          </div>
+          
+     
+        <a class="next" href="#group-3" aria-label="next">
+          <svg>
+            <use href="#next"></use>
+          </svg>
+        </a>
+      </div>
+      <!-- Group 3   -->
+      <div class="media-group" id="group-3">
+        <a class="previous" href="#group-2">
+          <svg>
+            <use href="#previous"></use>
+          </svg>
+        </a>
+        <div class="media-element">
+            <img src="../static/fifa22.png" alt="" />
+          </div>
+          <div class="media-element">
+            <img src="../static/fortnite.png" alt="" />
+          </div>
+          <div class="media-element">
+            <img src="../static/godofwar.png" alt=""/>
+            
+          </div>
+          <div class="media-element">
+              <img  src="../static/GTA5.png" alt="" />
+              
+            </div>
+            <div class="media-element">
+              <img src="../static/re4.png" alt="" />
+            </div>
+            <div class="media-element">
+                <img src="../static/re4.png" alt="" />
+              </div>
+        
+      </div>
+      
+      <!-- Pagination Indicators -->
+      <!-- <div class="navigation-indicators"> -->
+        <!-- 4 Groups -->
+        <!-- <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+   -->
+  
+  <!-- Navigation Icons -->
+  <svg>
+    <symbol id="next" viewBox="0 0 256 512">
+      <path fill="white"
+        d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+    </symbol>
+    <symbol id="previous" viewBox="0 0 256 512">
+      <path fill="white"
+        d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+    </symbol>
+  </svg>
 
 
 
 
 
+              
 
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="demo">
-    <div>
-    <img src="/static/arcade.gif" alt="Arcade Gif" width=100%>
+              
+  
     
-    </img><p class="first">The aims of this unit is to give students a critical understandi
-ng of the design of applications which support enterprise activities. There will b
-e an emphasis on software ons.</p>
-</div>
-<p class="second">All that you need to know is on the Unit Brightspace.</p>
-</div> -->
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

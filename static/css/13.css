@@ -1,6 +1,6 @@
 body {
     background-color: black; 
-    color: #D1E8E2;
+    color: teal;
     
 } 
 
@@ -249,4 +249,74 @@ p {
   }
   .media-scroller:hover .navigation-indicators {
     opacity: 1;
+  }
+
+.reg {
+    border-style: solid;
+    border-color: teal;
+    border-width: 0.2rem; 
+    width: 60%; 
+    margin: auto;
+    margin-top: 10%; 
+    height: 70vh;
+    border-radius: 20px;
+    background-image: url(../croppedland.png);
+}
+.fblog {
+    border-style: solid;
+    border-width: 5px;
+    width: 80%;
+    height: 80%;
+    padding-top: 170px;
+    background-color: teal;
+    border-radius: 20px;
+    
+
+  }      
+
+.fire {
+    
+    height: 100%;
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.welcome {
+    color: #D1E8E2;
+    border-width: .5rem;
+    letter-spacing: -2px;
+    margin: auto;
+    width: 50%;
+    padding: auto;
+    
+}
+
+.reg-body {
+    border: red;
+    border-width: 2px;
+    border-style: solid;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh ;
+}
+
+.demo {
+    width: 90%;
+    margin: auto;
+    border: red;
+    border-width: 1rem;
+    border-style: solid;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
   }

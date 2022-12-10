@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %} 
+
+
+   
+<div id="demogames" class="demo"> 
+    
+    <header class="py-5 mt-5">
+    <h1> Home </h1>
+    </header>
+
+    <div class="grid-container">
+    {% for d in data %} 
+                <!-- <div  class="row">
+                    <div style="display:flex; justify-content: center; align-items: center;" class="col align-self-center">
+                       
+                        <h2>{{ d['title'] }}</h2>
+                        <h3>{{ d['author'] }}</h3>
+                        <p>{{ d['dateCreated'] }}</p> 
+                        <p>{{ d['content'] }}</p>
+    
+                    </div>
+                </div> -->
+                <div class="card" style="margin: 2rem; width: 20rem; height: 20rem;">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">{{ d['title'] }}</li>
+                      <li class="list-group-item">{{ d['author'] }}</li>
+                      <li class="list-group-item">{{ d['content'] }}</li>
+                    </ul>
+                  </div>
+
+
+
+
+            {% endfor %}
+        </div> 
+</div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+    apiKey: "AIzaSyAe_v88fPy1-zywYUpIZ3TgQ2YjkyeJIuY",
+        authDomain: "sachin-online-game-store.firebaseapp.com",
+        projectId: "sachin-online-game-store",
+        storageBucket: "sachin-online-game-store.appspot.com",
+        messagingSenderId: "614508087331",
+        appId: "1:614508087331:web:3aed4483a35a82a640c996",
+        measurementId: "G-KKSYXFBRPJ"
+
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig); 
+    firebase.analytics(); 
+</script>
+
+
+
+{% endblock %}

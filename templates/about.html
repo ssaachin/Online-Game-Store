@@ -1,35 +1,24 @@
 {% extends "base.html" %}
 {% block content %} 
-<html>
+
     
     <head>
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='Games.css') }}">
 
     </head> 
-<div class="container">
-    <div class="card">
-      <div class="imgBx">
-        <img src="https://assets.codepen.io/4164355/shoes.png">
-      </div>
-      <div class="contentBx">
-        <h2>Nike Shoes</h2>
-        <div class="size">
-          <h3>Size :</h3>
-          <span>7</span>
-          <span>8</span>
-          <span>9</span>
-          <span>10</span>
+    
+    <div class="imageblock">
+        <img class="gameimg" src="https://upload.wikimedia.org/wikipedia/en/b/bf/Call_of_Duty_Modern_Warfare_3_box_art.png" alt="" />
+        <div class="gameinfo">
+            <h3 class="gamename">
+                Call of Duty: Modern Warfare 3
+            </h3>
+            <p class="gamedesc">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <button class="gamebutton">
+                More Info
+            </button>
         </div>
-        <div class="color">
-          <h3>Color :</h3>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <a href="#">Buy Now</a>
-      </div>
     </div>
-  </div>
-</html>
+
 
 {% endblock %}

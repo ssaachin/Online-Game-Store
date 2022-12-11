@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% block content %} 
 
+<head>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='Games.css') }}">
+
+</head> 
    
 <div id="demogames" class="demo"> 
     
@@ -28,16 +32,30 @@
                       <li class="list-group-item"></li>
                     </ul>
                   </div> -->
-                  <div class="card" style="margin: 2rem;">
+
+
+
+                  <!-- <div class="card" style="margin: 2rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">{{ d['name'] }}</h5>
                       <p class="card-text">{{ d['genre'] }}</p>
                       <a href="#" class="btnn btn-primary">Download</a>
                     </div>
-                  </div>
+                  </div> -->
 
-
+                  <div class="imageblock">
+                    <img class="gameimg" src="{{ d['image'] }}" alt="" />
+                    <div class="gameinfo">
+                        <h3 class="gamename">
+                            {{ d['name'] }}
+                        </h3>
+                        <p class="gamedesc">{{ d['description'] }}</p>
+                        <button class="gamebutton">
+                            Purchase
+                        </button>
+                    </div>
+                </div>
 
 
             {% endfor %}

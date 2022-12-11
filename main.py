@@ -4,14 +4,23 @@ import json
 import datetime
 
 
-from flask import Flask, render_template,request 
-from pymongo import MongoClient
-from bson.json_util import dumps
-from google.auth.transport import requests 
-from google.cloud import datastore 
-import google.oauth2.id_token  
+# from flask import Flask, render_template,request 
+# from pymongo import MongoClient
+# from bson.json_util import dumps 
+# from google.auth.transport import requests as grequests 
+# from google.cloud import datastore 
+# import google.oauth2.id_token 
 
-firebase_request_adapter = requests.Request() 
+import datetime 
+from flask import Flask, render_template, request, jsonify,redirect 
+import json
+import requests 
+from google.auth.transport import requests as grequests 
+from google.cloud import datastore 
+import google.oauth2.id_token 
+import pymongo 
+
+firebase_request_adapter = grequests.Request()
 
 
 
@@ -39,27 +48,27 @@ def fetch_times(email, limit):
     return times 
 
 
-cluster=MongoClient( "mongodb+srv://sachin2517:2517.Ylo@cluster0.mvn0mxf.mongodb.net/?retryWrites=true&w=majority") 
-db=cluster["test"] 
-collection=db["test"] 
+# cluster=MongoClient( "mongodb+srv://sachin2517:2517.Ylo@cluster0.mvn0mxf.mongodb.net/?retryWrites=true&w=majority") 
+# db=cluster["Games"] 
+# collection=db["Game"] 
 
 
-def get_mongodb_items(): 
+# def get_mongodb_items(): 
     # Search data from Mongodb
 
-    myCursor = None
+    # myCursor = None
     # create queries
     # title_query = {"Unit title": {"$eq": "IoT Unit"}} 
     # author_query = {"Unit leader": {"$eq": "Xin"}} 
     # dateCreated_query = {"dateCreated": {"$eq": 2021}}
     # demo_thing = {"thumbnail": {"$eq": "some url"}}  
 
-    myCursor = collection.find() 
+    # myCursor = collection.find() 
     # {"$and": [demo_thing]}
-    list_cur = list(myCursor) 
+    # list_cur = list(myCursor) 
     # print(list_cur) 
-    json_data = dumps(list_cur) 
-    return json_data 
+    # json_data = dumps(list_cur) 
+    # return json_data 
 
 
 
@@ -69,13 +78,18 @@ def get_mongodb_items():
 def home(): 
     return render_template('home.html') 
 
-
+@app.route('/about') 
+def myreq(): 
+    return render_template('about.html') 
 
 @app.route('/games') 
 def about(): 
-    jResponse=get_mongodb_items() 
+    url = "https://europe-west2-sachin-online-game-store.cloudfunctions.net/DisplayGames"
 
-    data=json.loads(jResponse)
+    uResponse = requests.get(url)
+
+    jResponse = uResponse.text 
+    data = json.loads(jResponse)
     return render_template('Games.html', data=data)
 
 @app.route('/register') 

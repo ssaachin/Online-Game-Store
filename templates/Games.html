@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% block content %} 
 
-
    
 <div id="demogames" class="demo"> 
     
-    <header class="py-5 mt-5">
+    <!-- <header class="py-5 mt-5">
     <h1> Home </h1>
-    </header>
+    </header> -->
 
     <div class="grid-container">
+        
     {% for d in data %} 
                 <!-- <div  class="row">
                     <div style="display:flex; justify-content: center; align-items: center;" class="col align-self-center">
@@ -21,12 +21,20 @@
     
                     </div>
                 </div> -->
-                <div class="card" style="margin: 2rem; width: 20rem; height: 20rem;">
+                <!-- <div class="card" style="margin: 2rem; width: 20rem; height: 20rem;">
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item">{{ d['title'] }}</li>
-                      <li class="list-group-item">{{ d['author'] }}</li>
-                      <li class="list-group-item">{{ d['content'] }}</li>
+                      <li class="list-group-item"></li>
+                      <li class="list-group-item">{{ d['year'] }}</li>
+                      <li class="list-group-item"></li>
                     </ul>
+                  </div> -->
+                  <div class="card" style="margin: 2rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ d['name'] }}</h5>
+                      <p class="card-text">{{ d['genre'] }}</p>
+                      <a href="#" class="btnn btn-primary">Download</a>
+                    </div>
                   </div>
 
 

@@ -1,14 +1,35 @@
-
+{% extends "base.html" %}
 {% block content %} 
+<html>
+    
+    <head>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='Games.css') }}">
 
-<div class="demo">
-    <h1>Welcome to Advanced Development </h1>
-    <p class="first">The aims of this unit is to give students a critical understandi
-ng of the design of applications which support enterprise activities. There will b
-e an emphasis on software ons.</p>
-
-<p class="second">All that you need to know is on the Unit Brightspace.</p>
-</div>
-
+    </head> 
+<div class="container">
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://assets.codepen.io/4164355/shoes.png">
+      </div>
+      <div class="contentBx">
+        <h2>Nike Shoes</h2>
+        <div class="size">
+          <h3>Size :</h3>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+        </div>
+        <div class="color">
+          <h3>Color :</h3>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a href="#">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</html>
 
 {% endblock %}

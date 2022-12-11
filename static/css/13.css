@@ -4,12 +4,15 @@ body {
     
 } 
 
+/* Hero Image */
+
 .arcade {
     height: 38rem;
     
 
 }
 
+/* NavBar */
 
 .navbar {
     background-color: #116466;
@@ -81,8 +84,9 @@ body {
 }
 
 p {
-    font-family: 'Sigmar One', cursive;
-    font-style: italic;
+    /* font-family: 'Sigmar One', cursive; */
+    /* font-style: italic; */
+    font-weight: 700;
     letter-spacing: 1;    
 }
 
@@ -251,6 +255,8 @@ p {
     opacity: 1;
   }
 
+  /* Register and Login */
+
 .reg {
     border-style: solid;
     border-color: teal;
@@ -260,19 +266,42 @@ p {
     margin-top: 10%; 
     height: 70vh;
     border-radius: 20px;
-    background-image: url(../croppedland.png);
+    /* background-image: url(../croppedland.png); */
+    background-image: linear-gradient(to left, #008080, #195c73, #2f3950, #241d26, #000000);
 }
 .fblog {
-    border-style: solid;
-    border-width: 5px;
-    width: 80%;
-    height: 80%;
+    /* border-style: solid;
+    border-width: 5px; */
+    width: 100%;
+    height: 100%;
     padding-top: 170px;
-    background-color: teal;
     border-radius: 20px;
     
 
-  }      
+  } 
+  
+  .fblogg {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    
+
+  } 
+
+  .row {
+    /* border: red;
+    border-width: 2px;
+    border-style: solid; */
+    margin: auto;
+    border-radius: 10px;
+    color: #D1E8E2;
+    padding: 10px;
+  }
 
 .fire {
     
@@ -289,15 +318,46 @@ p {
     border-width: .5rem;
     letter-spacing: -2px;
     margin: auto;
-    width: 50%;
+    width: 30%;
+    padding: auto;    
+    /* border: red;
+    border-width: 2px;
+    border-style: solid; */
+    
+}
+.wel1 {
+    color: #D1E8E2;
+    border-width: .5rem;
+    letter-spacing: -2px;
+    margin: auto;
+    width: 30%;
     padding: auto;
+    /* border: red;
+    border-width: 2px;
+    border-style: solid; */
     
 }
 
-.reg-body {
-    border: red;
+.char{
+    height: 100%;
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* border: yellow;
     border-width: 2px;
-    border-style: solid;
+    border-style: solid; */
+}
+
+
+/* After logging in */
+
+.reg-body {
+    /* border: red;
+    border-width: 2px;
+    border-style: solid; */
     margin: auto;
     width: 90%;
     height: 100%;
@@ -307,16 +367,28 @@ p {
     margin-top: 20vh ;
 }
 
+
+    /* Games */
+
 .demo {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    border: red;
+    /* border: green;
     border-width: 1rem;
-    border-style: solid;
+    border-style: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.grid-container {
+ .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     padding: 10px;
-  }
+    width: 70%;
+    margin-top: 100px;    
+  } 
+
+
+  

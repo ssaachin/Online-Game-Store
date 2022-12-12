@@ -84,7 +84,7 @@ def myreq():
 
 @app.route('/games') 
 def about(): 
-    url = "https://europe-west2-sachin-online-game-store.cloudfunctions.net/DisplayGames"
+    url = "https://europe-west2-sachin-online-game-store.cloudfunctions.net/GoogleStorage_Display"
 
     uResponse = requests.get(url)
 

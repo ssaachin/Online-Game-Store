@@ -15,34 +15,6 @@
     <div class="grid-container">
         
     {% for d in data %} 
-                <!-- <div  class="row">
-                    <div style="display:flex; justify-content: center; align-items: center;" class="col align-self-center">
-                       
-                        <h2>{{ d['title'] }}</h2>
-                        <h3>{{ d['author'] }}</h3>
-                        <p>{{ d['dateCreated'] }}</p> 
-                        <p>{{ d['content'] }}</p>
-    
-                    </div>
-                </div> -->
-                <!-- <div class="card" style="margin: 2rem; width: 20rem; height: 20rem;">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item"></li>
-                      <li class="list-group-item">{{ d['year'] }}</li>
-                      <li class="list-group-item"></li>
-                    </ul>
-                  </div> -->
-
-
-
-                  <!-- <div class="card" style="margin: 2rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">{{ d['name'] }}</h5>
-                      <p class="card-text">{{ d['genre'] }}</p>
-                      <a href="#" class="btnn btn-primary">Download</a>
-                    </div>
-                  </div> -->
 
                   <div class="imageblock">
                     <img class="gameimg" src="{{ d['image'] }}" alt="" />
@@ -51,9 +23,18 @@
                             {{ d['name'] }}
                         </h3>
                         <p class="gamedesc">{{ d['description'] }}</p>
-                        <button class="gamebutton">
+                        <!-- <button class="gamebutton">
                             Purchase
-                        </button>
+                        </button> -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                            ...
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
 

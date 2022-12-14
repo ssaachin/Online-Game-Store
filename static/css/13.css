@@ -258,6 +258,61 @@ p {
     opacity: 1;
   }
 
+  .top {
+    
+      padding: 20px;
+      background-color: #301934;
+      
+  }
+
+  .top-img {
+    width: 30%;
+    height: 100%;
+    object-fit:cover;
+    transform-origin:center;
+    transform:scale(1);
+    transition:0.5s;
+    
+  }
+  .top-three {
+    max-width:700px;
+    max-height:350px;
+    margin: auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
+    /* border: green solid 1rem; */
+    margin-top: 50px;
+    
+  }
+  .top-three:hover img {
+    opacity:0.3;
+  }
+  .top-three img:hover {
+    transform:scale(1.1);
+    opacity:1;
+  }
+
+  .top-five {
+    /* border: red solid 1rem; */
+    color: black;
+    letter-spacing: -1px;
+    width: 15%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background-color: teal;
+    border-radius: 10px;
+    height: 50px;
+    
+
+  }
+
+
+
   /* Register and Login */
 
 .reg {

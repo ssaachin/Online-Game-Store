@@ -14,6 +14,6 @@
 indexes:
   - kind: visit
     ancestor: yes
-    properties: 
+    properties:
     - name: timestamp
       direction: desc

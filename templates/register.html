@@ -42,7 +42,9 @@ app.
     <!-- [END gae_python3_auth_include_firebaseui] -->
     <!-- [END gae_python38_auth_include_firebaseui] -->
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link type="text/css" rel="stylesheet" href="../static/css/Register.css">
+    
+    
 
     </head> 
     <div id="big" class="reg">
@@ -81,32 +83,53 @@ app.
 
 
 
-    <div class="reg-body"> 
-        
-
-        <!-- [START gae_python38_auth_firebase_html] -->
-        <!-- [START gae_python3_auth_firebase_html] -->
+    <div class="reg-body" id="reg-body" hidden=true> 
         
         
-
+    <button type="button" id="sign-out" hidden=true class="Logout" href="/">LOG OUT <img class="logout-img" src="../static/126467.png" /></button>
         
-        <button type="button" id="sign-out" hidden=true class="btn btn-outline-primary">Sign out</button>
+        
         <div id="login-info" hidden=true>
-            <h2>Login info:</h2>
+           
+           
             {% if user_data %} 
-
-            <dl>
-                <dt>HIYA! {{ user_data['name'] }} </dt>
-                <dt>Email</dt><dd>{{ user_data['email'] }}</dd>
-                <dt>Last 10 visits</dt><dd>
-            {% for time in times %} 
-                    <p>{{ time['timestamp'] }}</p>
-                {% endfor %} </dd>
-            </dl>
+                <h1 class="username">Welcome! {{ user_data['name'] }} </h1>
+                <!-- <dt>Email</dt><dd>{{ user_data['email'] }}</dd> -->
+        
             {% elif error_message %} 
                 <p>Error: {{ error_message }}</p>
-            {% endif %} 
+            {% endif %}
         </div>
+
+
+        <div class="container text-center">
+            <div class="row">
+              <div class="btncontainer"  >
+           
+            <a class="btn" href="/add" role="button">Add</a>
+              </div>
+              <div class="btncontainer"  >
+                <a class="btn" href="/update" role="button">Update</a>
+              </div>
+              <div class="btncontainer" >
+                <a class="btn" href="/delete" role="button">Delete</a>
+              </div>
+            </div>
+          </div>
+
+          <ul class="requestslist">
+              {% for d in data %}
+              <div class="outer-req">
+            <li class="request">
+                <p class="req-gamename">{{ d['gamename'] }}</p>
+                    <header class="req-name"> Requested by: {{ d['name'] }} </header>
+            </li>
+        </div>
+                {% endfor %}
+          </ul>
+          
+        
+        
         <!-- [END gae_python3_auth_firebase_html] -->
         <!-- [END gae_python38_auth_firebase_html] -->
     </div>

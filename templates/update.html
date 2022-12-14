@@ -10,7 +10,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-storage.js"></script>
 
     <link type="text/css" rel="stylesheet" href="../static/css/add.css">
-    <script src="{{ url_for('static', filename='forumpost.js') }}"></script>
+    <script src="{{ url_for('static', filename='update.js') }}"></script>
 </head>
 <body>
    
@@ -41,12 +41,6 @@
        
     <form>
         <button class="back"><a  href="/home">Home</a> </button>
-        <div class="row mb-3">
-            <label for="nameInput" class="col-form-label" >Name</label>
-            
-              <input type="text" class="form-control" id="name" name="name">
-           
-          </div>
 
         <div class="row mb-3">
           <label for="emailInput" class="col-form-label" >Email</label>
@@ -68,7 +62,7 @@
             <input type="text" class="form-control" id="gamename" name="gamename">
          
         </div>
-        <button type="submit" class="btn">Add</button>
+        <button type="submit" class="btn">Update</button>
     
       </form>
     </div>

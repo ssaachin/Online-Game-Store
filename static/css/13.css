@@ -359,13 +359,46 @@ p {
     border-width: 2px;
     border-style: solid; */
     margin: auto;
-    width: 90%;
-    height: 100%;
-    display: flex;
+    width: 70%;
+    height: 70vh;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     margin-top: 20vh ;
+    background-color: #116466;
+    border-radius: 20px;
+    padding: 10px;
 }
+.Logout {
+    float: right;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    font-weight: 500;
+    letter-spacing: -1;
+    
+    
+}
+.Logout:hover {
+    transform: scale(1.1);
+}
+
+.logout-img {
+    height: 15px;
+    width: 15px;
+}
+.username {
+    margin: 30px;
+    /* border: red;
+    border-width: 2px;
+    border-style: solid; */
+    width: 20%;
+    color: white;
+    font-size: large;
+
+}
+
 
 
     /* Games */

@@ -42,6 +42,9 @@ body {
     letter-spacing: -1px;
 }
 
+.nav-logo {
+    height: 50px;    
+}
 
 .background {
     height: 100%;

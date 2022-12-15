@@ -4,12 +4,6 @@ import json
 import datetime
 
 
-# from flask import Flask, render_template,request 
-# from pymongo import MongoClient
-# from bson.json_util import dumps 
-# from google.auth.transport import requests as grequests 
-# from google.cloud import datastore 
-# import google.oauth2.id_token 
 
 import datetime 
 from flask import Flask, render_template, request, jsonify,redirect 
@@ -191,7 +185,6 @@ def form():
 def createpost(): 
     name = request.form['name'] 
     email = request.form['email'] 
-    # dateCreated = datetime.datetime.now().year 
     gamename = request.form['gamename']
 
     if email and gamename: 
@@ -211,7 +204,6 @@ def updatePost():
 def deletePost(): 
     name = request.form['name'] 
     email = request.form['email'] 
-    # dateCreated = datetime.datetime.now().year 
     gamename = request.form['gamename'] 
 
     if name and email and gamename: 

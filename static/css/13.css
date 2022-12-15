@@ -77,6 +77,12 @@ body {
 .btn {
     border-radius: 10px;
     width: 20rem;
+    color: white;
+    background-color: purple;
+}
+
+.btn:hover{
+    border: solid gold 2px;
 }
 
 .OGS {

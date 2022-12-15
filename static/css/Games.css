@@ -66,7 +66,7 @@
          
 	} 
 		
-   .gamebutton {
+   /* .gamebutton {
         position: relative;
         display: flex;
         align-items: center;
@@ -79,6 +79,57 @@
         color: white;
         font-size: 14px;
         width: 100%;
-		} 
-	
+		}  */
+
+        .gamebutton {
+            position: relative;
+            width: 100%;
+            height: 40px;
+            font-size: 14px;
+            background-color: purple;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: width .5s
+            border-radius .5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 9px;
+        }
+
+        .gamebutton *{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: opacity .25s;
+        }
+
+        .material-symbols-outlined {
+            opacity: 0;
+        }
+        
+        .gamebutton:focus {
+            background-color: #44c08a ;
+        }
+
+        .gamebutton:focus .btn-txt {
+            opacity: 0;
+        }
+
+        .gamebutton:focus .material-symbols-outlined {
+            opacity: 1;
+            transition-delay: .5s;
+        }
+
+        .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+        }
+
 

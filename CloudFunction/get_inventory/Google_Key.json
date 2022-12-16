@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "sachin-online-game-store",
+    "private_key_id": "10dd93e4dfbe81e724d236c0beeacc1c68dd4c63",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC50P/S09uPw2vB\nMEWTiXk9UJhfOMSfba/lr3HZj6FZuvmJKth08cW/u6cNPmzNxDaWrO0rqfB3Xo4u\nRuLCmpnRhGjl4pscfXXnu+wD28vbsTHd9NiSDeRilKBKp+G+sKcO4rVeuUjFBcDM\nkufst3mIYvGYdsPNrPU+LLWJBfXk4nocViYlbaNZzizxHQLZxmDNj/ePwZXE+sim\nFxFCifadqozBTY4Bx2JFKtc8sauNBAtJIcsiDjWnRAsYst8cGpXe1BJZ5SQJx+Ba\nffcPcFXiNtZRWn+gYBYwZnHsioVw1oa1grIlLsGapauNBq6ZcuSTzLjkyJ1qMYEn\nRqh0SDbdAgMBAAECggEAIqmvx2L5DuD8HW5FVGftQ3hg7EZ5O2ppSTYIzXaDOWtt\nOF7TQUGGy6UUXR6bimkDa+k3VxFdB8+OQ2i6zWWssw55yQSUPeTTlVaTiQa8CTAN\nZuPRcLGBvLgQDM0zifCHQXoeLlzvC73ugNsYw6pYVA5tFi11ik0s9Ju/g5+mhrs9\nZ+4/Ip01ZFVEFE268CJO+4NYExtjUDcOfBXWFZkZXB6WZpr/eZyNmDrEhuRzfS7S\nMdkR1AZIUuyCnlHTkpshb7oC2LupNQveOE6xrfq0JOPEt6SjjiI5tADzqQz0tjcx\nuFpRfWy1IiBIu5CwsAMMaWAWfVMczf82pCAcqZAiewKBgQDkzwVMgEHxc4rcCT60\nOiI99Qoq9zqWBo/fxLyCSlMdgxCo1u0OtkIC8FFrR50Xxh48xAjHCDgv+26WnTxe\nCrw6ccYb2YbJGABLFTQRC9ixelX4uRknxOSEdE/Q+LtMZb52eRGmT50VnB7m6Jvr\nMxdyI5QgOFn3JJamrRbWuZ5y8wKBgQDP5gmPIjoHMnBT+4DjsnisTHMA/QIIXm6f\nUM9OFBIkMzeOb2DiCNZlECNa20seF51As4loK6Hv/oH86K0AmnUbfTtOfEutnE/l\nV0cdH8JF7FspmQXGki/4KujEXJGs1kkjJM9niQJDn4N+dy2aapUF0IX+K7kuoTy8\nhrbH7PcC7wKBgE1sP77DJ40sK7CI8E7L3QpaADbJsWlSjxyI1cDApZ822kxHba+s\nvGmCKArFEMMapuCo9M9kWJ7j1WfhjKvFtiuQlBiYYqNpG7BMXHHoMErdunmPKJPs\na+bl9Jwhjj8rrmcoUHCWP/EwAsTfsOLFRwm4QEcmykp2dwOvTisaZCNBAoGAIs/k\nPeF/UgEyKf3tQTN7XW6Xu0yicIBPicHgVLSrrQAeh21DDdZpABdJtEcQNwPBQzpN\nAfJ8dVFqtszHW1iBz46SxbuueG26Oy74K3pL76V6RmbnPq7v9WBKBcdyZTyklovt\nZurcRDKLtDuEmVzLg2O9bCgqJBK/ttnf9W5KlmUCgYAVEsWXjh+SyaVuN18hhkxS\nNBFhdCp1y2Z2UT7Wq8FKGpyGmeFJ5OMWUL1f0DS+tB4fh16X1GXDJg6xm2aoeJgn\nve2KKlJsCnTvyAG0puLyXx2ZhEIMnqognxkhsSIC7ai/JBy6jLb8T5kDRz1z2p9u\nk83iUIYrA2SmZf1Tuk+boA==\n-----END PRIVATE KEY-----\n",
+    "client_email": "adsachin@sachin-online-game-store.iam.gserviceaccount.com",
+    "client_id": "110868664662504479680",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/adsachin%40sachin-online-game-store.iam.gserviceaccount.com"
+  }
+  

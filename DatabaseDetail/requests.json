@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "6397d1c2af4d8e20a294c920"
+  },
+  "email": "123@gmail.com",
+  "name": "Sachin",
+  "gamename": "Fifa 23"
+},{
+  "_id": {
+    "$oid": "6397ed5a3eb5d718a7125151"
+  },
+  "name": "Dan",
+  "email": "Dan@gmail.com",
+  "gamename": "Nba 2k22"
+}]

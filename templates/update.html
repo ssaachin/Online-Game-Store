@@ -1,90 +1,40 @@
-
-
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-storage.js"></script>
-
     <link type="text/css" rel="stylesheet" href="../static/css/add.css">
     <script src="{{ url_for('static', filename='update.js') }}"></script>
 </head>
+
 <body>
-   
-    
-
-    
-
-    <!-- <form class="form-inline">
-        <div class="form-group">
-            <label class="sr-only" for="titleInput">Post Title</label>
-            <input type="text" name="title" class="form-control" id="title" placeholder="Title">
-        </div>
-        </br>
-        <div class="form-group">
-            <label class="sr-only" for="contentInput">Post Content</label>
-            <textarea id="content" name="content" class="form-control" rows="10" cols="70" placeholder="Post Content"></textarea>
-        </div>
-        </br>
-        <button type="submit" class="btn btn-default">Submiit</button>
-    </form>
-    </br>
-    <div id="successAlert" class="alert alert-success" role="alert" style="display:none"></div>
-    <div id="errorAlert" class="alert alert-danger" role="alert" style="display:none"></div> -->
-
     <div class="formlayer">
-        
-    <div class="addform">
-       
-    <form>
-        <button class="back"><a  href="/home">Home</a> </button>
-
-        <div class="row mb-3">
-          <label for="emailInput" class="col-form-label" >Email</label>
-          
-            <input type="email" class="form-control" id="email" name="email">
-         
+        <div class="addform">
+            <form>
+                <button class="back"><a href="/home">Home</a></button>
+                <div class="row mb-3">
+                    <label for="emailInput" class="col-form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="row mb-3">
+                    <label for="gamenameInput" class="col-form-label">Game Name</label>
+                    <input type="text" class="form-control" id="gamename" name="gamename">
+                </div>
+                <button type="submit" class="btn">Update</button>
+            </form>
         </div>
-
-
-
-        <!-- <div class="form-group">
-            <label class="sr-only" for="contentInput">Post Content</label>
-            <textarea id="content" name="content" class="form-control" rows="10" cols="70" placeholder="Post Content"></textarea>
-        </div> -->
-
-        <div class="row mb-3">
-          <label for="gamenameInput" class="col-form-label">Game Name</label>
-          
-            <input type="text" class="form-control" id="gamename" name="gamename">
-         
-        </div>
-        <button type="submit" class="btn">Update</button>
-    
-      </form>
     </div>
-</div>
-    </br>
+    <br>
     <div id="successAlert" class="alert alert-success" role="alert" style="display:none"></div>
     <div id="errorAlert" class="alert alert-danger" role="alert" style="display:none"></div>
-
 </body>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
-
 <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-    https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
-
 <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
             apiKey: "AIzaSyDqyeTFhIMAuWp3fl203Cj5XSdsVFgaXBo",
             authDomain: "ad-2022-sachin.firebaseapp.com",
@@ -94,7 +44,6 @@
             appId: "1:178186359996:web:caeffd7ef9ead54a102cb9",
             measurementId: "G-2B89WC9V3D"
         };
-        // Initialize Firebase
         firebase.initializeApp(firebaseConfig); 
         firebase.analytics(); 
 </script>

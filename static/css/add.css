@@ -1,8 +1,10 @@
+/* Set the background color of the body */
 body {
     background-color: black;
 }
 
-.formlayer{
+/* Styling for the form layer */
+.formlayer {
     width: 70%;
     margin: auto;
     border-color: purple;
@@ -10,47 +12,52 @@ body {
     border-width: 2px;
     margin-top: 15vh;
     height: 70%;
-    background-image: linear-gradient(to left, #008080, #195c73, #2f3950, #241d26, #000000);
+    background-image: linear gradient(to left, #008080, #195c73, #2f3950, #241d26, #000000);
     border-radius: 20px;
 }
+
+/* Styling for the form container */
 .addform {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* Styling for labels within the form */
 label {
     color: aliceblue;
 }
+
+/* Styling for the form element */
 form {
     width: 30%;
     height: 50%;
     margin-top: 20vh;
 }
 
+/* Styling for form rows */
 .row {
     margin: 10px;
 }
 
+/* Styling for general buttons */
 .btn {
-    
-    
     width: 95%;
     margin: 10px;
     background-color: purple;
     color: white;
 }
 
+/* Hover effect for buttons */
 .btn:hover {
     color: white;
     border: solid gold 1px;
 }
 
+/* Styling for the back button */
 .back {
-    
     width: 20%;
     border-radius: 20px;
-    
-
 }
 
 

@@ -1,78 +1,53 @@
-
-
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-storage.js"></script>
+  <!-- CSS and JavaScript libraries -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <!-- Firebase SDK scripts -->
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-storage.js"></script>
 
-    <link type="text/css" rel="stylesheet" href="../static/css/add.css">
-    <script src="{{ url_for('static', filename='delete.js') }}"></script>
+  <!-- CSS and JavaScript files -->
+  <link type="text/css" rel="stylesheet" href="../static/css/add.css">
+  <script src="{{ url_for('static', filename='delete.js') }}"></script>
 </head>
 <body>
-   
-    
-
-    
-
-    
-
-    <div class="formlayer">
-        
-    <div class="addform">
-       
-    <form>
-        <button class="back"><a  href="/home">Home</a> </button>
-        <div class="row mb-3">
-            <label for="nameInput" class="col-form-label" >Name</label>
-            
-              <input type="text" class="form-control" id="name" name="name">
-           
-          </div>
-
-        <div class="row mb-3">
-          <label for="emailInput" class="col-form-label" >Email</label>
-          
-            <input type="email" class="form-control" id="email" name="email">
-         
-        </div>
-
-
-
-        
-
-        <div class="row mb-3">
-          <label for="gamenameInput" class="col-form-label">Game Name</label>
-          
-            <input type="text" class="form-control" id="gamename" name="gamename">
-         
-        </div>
-        <button type="submit" class="btn">Delete</button>
-    
-      </form>
-    </div>
-</div>
-    </br>
-    <div id="successAlert" class="alert alert-success" role="alert" style="display:none"></div>
-    <div id="errorAlert" class="alert alert-danger" role="alert" style="display:none"></div>
-
+  <div class="formlayer">
+      <div class="addform">
+          <form>
+              <!-- Back button to return to home -->
+              <button class="back"><a href="/home">Home</a></button>
+              <div class="row mb-3">
+                  <label for="nameInput" class="col-form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name">
+              </div>
+              <div class="row mb-3">
+                  <label for="emailInput" class="col-form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email">
+              </div>
+              <div class="row mb-3">
+                  <label for="gamenameInput" class="col-form-label">Game Name</label>
+                  <input type="text" class="form-control" id="gamename" name="gamename">
+              </div>
+              <button type="submit" class="btn">Delete</button>
+          </form>
+      </div>
+  </div>
+  <br>
+  <!-- Alert messages for success and error -->
+  <div id="successAlert" class="alert alert-success" role="alert" style="display:none"></div>
+  <div id="errorAlert" class="alert alert-danger" role="alert" style="display:none"></div>
 </body>
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- Firebase configuration and initialization -->
 <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
-
 <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-    https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
 
 <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    // Firebase configuration
     const firebaseConfig = {
             apiKey: "AIzaSyDqyeTFhIMAuWp3fl203Cj5XSdsVFgaXBo",
             authDomain: "ad-2022-sachin.firebaseapp.com",

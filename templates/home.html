@@ -1,63 +1,49 @@
 {% extends "base.html" %} 
-{% block content %} 
-    <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Sigmar+One&display=swap" rel="stylesheet">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Nabla&family=Sigmar+One&display=swap'); </style>
-    <link rel="stylesheet" href="static/css/13.css">
-    </head>
-    
+{% block content %}
 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Sigmar+One&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nabla&family=Sigmar+One&display=swap'); 
+  </style>
+  <link rel="stylesheet" href="static/css/13.css">
+</head>
 
-    <div class="background">
-      <img class="arcade" src="../static/arcade.gif" alt="arcade" width= 100% />
+  <div class="background">
+    <img class="arcade" src="../static/arcade.gif" alt="arcade" width= 100% />
+  </div>
+
+  <div class="content">
+    <div class="title">
+      <h1 class="OGS">Welcome to OGS</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+        natus, enim ipsam magnam odit deserunt itaque? Minima earum velit
+        tenetur!
+      </p>
+      <a href="/games" ><button  type="button" class="btn">Games </button></a>
     </div>
-    <div class="content">
-      <div class="title">
-        <h1 class="OGS">Welcome to OGS</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-          natus, enim ipsam magnam odit deserunt itaque? Minima earum velit
-          tenetur!
-        </p>
-        <a href="/games" ><button  type="button" class="btn">Games </button></a>
-        </div>
+  </div>
+
+  <div class="icon">
+    <img class="pictures" src="../static/clearps4.png"   alt="" />
+    <img class="pictures" src="../static/ninclear.png"   alt="" />
+    <img class="pictures" src="../static/xbox clear.png"   alt="" />
+    <img class="pictures" src="../static/steamclear.png"   alt="" />       
+  </div>
     
-    </div>
-    <div class="icon">
-                <img class="pictures" src="../static/clearps4.png"   alt="" />
-                <img class="pictures" src="../static/ninclear.png"   alt="" />
-                <img class="pictures" src="../static/xbox clear.png"   alt="" />
-                <img class="pictures" src="../static/steamclear.png"   alt="" />       
-    </div>
-
-
-    <div class="icon">
-            
-</div>
-    
-
-    <div class="top">
-        <header class="top-five">Top 5 Games of the Year</header>
+  <div class="top">
+    <header class="top-five">Top 5 Games of the Year</header>
     <div class="top-three">
-        <img class="top-img" src="../static/red.png" alt="">
-        <img class="top-img" src="../static/godofwar.png" alt="">
-        <img class="top-img" src="../static/fortnite.png" alt="">
-        <img class="top-img" src="../static/fifa22.png" alt="">
-        <img class="top-img" src="../static/MW3.png" alt="">
+      <img class="top-img" src="../static/red.png" alt="">
+      <img class="top-img" src="../static/godofwar.png" alt="">
+      <img class="top-img" src="../static/fortnite.png" alt="">
+      <img class="top-img" src="../static/fifa22.png" alt="">
+      <img class="top-img" src="../static/MW3.png" alt="">
     </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
+  </div>
 
 {% endblock %} 

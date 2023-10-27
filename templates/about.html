@@ -13,66 +13,42 @@
     <script src="{{ url_for('static', filename='forumpost.js') }}"></script>
 </head>
 <body>
-   
-    
-
-    
-
-    
-
     <div class="formlayer">
-        
-    <div class="addform">
-       
-    <form>
-        <button class="back"><a  href="/home">Home</a> </button>
-        <div class="row mb-3">
-            <label for="nameInput" class="col-form-label" >Name</label>
-            
-              <input type="text" class="form-control" id="name" name="name">
-           
-          </div>
+      <div class="addform">
+          <button class="back"><a href="/home">Home</a></button>
+          <form>
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="name">
+              </div>
 
-        <div class="row mb-3">
-          <label for="emailInput" class="col-form-label" >Email</label>
-          
-            <input type="email" class="form-control" id="email" name="email">
-         
-        </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="email">
+              </div>
 
+              <div class="form-group">
+                  <label for="gamename">Game Name</label>
+                  <input type="text" class="form-control" id="gamename" name="gamename">
+              </div>
+              <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+      </div>
+  </div>
+  
+  <br>
 
-
-        
-
-        <div class="row mb-3">
-          <label for="gamenameInput" class="col-form-label">Game Name</label>
-          
-            <input type="text" class="form-control" id="gamename" name="gamename">
-         
-        </div>
-        <button type="submit" class="btn">Add</button>
-    
-      </form>
-    </div>
-</div>
-    </br>
-    <div id="successAlert" class="alert alert-success" role="alert" style="display:none"></div>
-    <div id="errorAlert" class="alert alert-danger" role="alert" style="display:none"></div>
+  <div id="successAlert" class="alert alert-success" role="alert" style="display:none"></div>
+  <div id="errorAlert" class="alert alert-danger" role="alert" style="display:none"></div>
 
 </body>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- Dont move this script tags to the head, doesn't work-->
 <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
-
 <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-    https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
-
 <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
             apiKey: "AIzaSyDqyeTFhIMAuWp3fl203Cj5XSdsVFgaXBo",
             authDomain: "ad-2022-sachin.firebaseapp.com",

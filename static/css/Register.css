@@ -1,88 +1,38 @@
-
-
-
+/* Common styles */
 .reg {
-    border-style: solid;
-    border-color: teal;
-    border-width: 0.2rem; 
-    width: 60%; 
+    border: 0.2rem solid teal;
+    width: 60%;
     margin: auto;
-    margin-top: 10%; 
+    margin-top: 10%;
     height: 70vh;
     border-radius: 20px;
-    /* background-image: url(../croppedland.png); */
     background-image: linear-gradient(to left, #008080, #195c73, #2f3950, #241d26, #000000);
 }
-.fblog {
-    /* border-style: solid;
-    border-width: 5px; */
+
+.fblog, .fblogg {
     width: 100%;
     height: 100%;
+}
+
+.fblog {
     padding-top: 170px;
     border-radius: 20px;
-    
+}
 
-  } 
-  
-  .fblogg {
-    width: 90%;
-    height: 90%;
+.fblogg {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+}
 
-    
-
-  } 
-
-  .row {
-    /* border: red;
-    border-width: 2px;
-    border-style: solid; */
+.row {
     margin: auto;
     border-radius: 10px;
     color: #D1E8E2;
     padding: 10px;
-  }
-
-.fire {
-    
-    height: 100%;
-    width: 50%;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-.welcome {
-    color: #D1E8E2;
-    border-width: .5rem;
-    letter-spacing: -2px;
-    margin: auto;
-    width: 30%;
-    padding: auto;    
-    /* border: red;
-    border-width: 2px;
-    border-style: solid; */
-    
-}
-.wel1 {
-    color: #D1E8E2;
-    border-width: .5rem;
-    letter-spacing: -2px;
-    margin: auto;
-    width: 30%;
-    padding: auto;
-    /* border: red;
-    border-width: 2px;
-    border-style: solid; */
-    
 }
 
-.char{
+.fire, .char {
     height: 100%;
     width: 50%;
     float: left;
@@ -90,29 +40,27 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    /* border: yellow;
-    border-width: 2px;
-    border-style: solid; */
 }
 
+.welcome, .wel1 {
+    color: #D1E8E2;
+    border-width: 0.5rem;
+    letter-spacing: -2px;
+    margin: auto;
+    width: 30%;
+}
 
 /* After logging in */
-
 .reg-body {
-    /* border: red;
-    border-width: 2px;
-    border-style: solid; */
     margin: auto;
     width: 70%;
     height: 70vh;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    margin-top: 20vh ;
+    margin-top: 20vh;
     background-image: linear-gradient(to left, #008080, #195c73, #2f3950, #241d26, #000000);
     border-radius: 20px;
     padding: 10px;
 }
+
 .Logout {
     float: right;
     border-radius: 20px;
@@ -121,9 +69,8 @@
     border: none;
     font-weight: 500;
     letter-spacing: -1;
-    
-    
 }
+
 .Logout:hover {
     transform: scale(1.1);
 }
@@ -132,38 +79,32 @@
     height: 15px;
     width: 15px;
 }
+
 .username {
     margin: 30px;
-    /* border: red;
-    border-width: 2px;
-    border-style: solid; */
     width: 20%;
     color: white;
     font-size: large;
-
 }
 
 .container .row {
-    
     padding: 10px;
     background-color: teal;
     width: 60%;
-    
 }
+
 .btncontainer {
     margin: auto;
-    
 }
 
 .btn {
     width: 10vw;
-    background-color: purple ;
+    background-color: purple;
     color: white;
-} 
+}
+
 .btn:hover {
-    border: gold;
-    border-width: 2px;
-    border-style: solid;
+    border: gold 2px solid;
     color: white;
 }
 
@@ -175,12 +116,9 @@
     height: 80%;
     margin-top: 50px;
     list-style-type: none;
-       
+}
 
-    }
-
-.request{
-    
+.request {
     border-radius: 5px;
     width: 100%;
     float: right;
@@ -191,7 +129,7 @@
 }
 
 .request:hover {
-   border: gold solid 2px; 
+    border: gold 2px solid;
 }
 
 .req-name {
@@ -199,7 +137,6 @@
     margin: 5px;
 }
 
- 
 .req-gamename {
     margin: 5px;
 }
